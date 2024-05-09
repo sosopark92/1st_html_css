@@ -1,0 +1,48 @@
+/**html과 body 전체 높이를 화면 너비에 맟춤**/
+html, body{
+    height: 100% /*부모 높이를 기준으로 지정*/
+}
+
+/*전체 박스를 가운데로 배치*/
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*header 태그 스타일링*/
+header{
+    width: 310px;
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    margin-bottom:10px;
+}
+/*main 태그 스타일링*/
+main{
+    display: flex;
+}
+
+nav{
+    width: 100px;
+    height: 200px;;
+    background-color: brown;
+    border-radius: 10px;
+    margin-right:10px;
+}
+
+article{
+    width: 200px;
+    height:200px;
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+/*footer 태그 스타일링*/
+footer{
+    width: 310px;
+    height: 50px;
+    background-color: crimson;
+    border-radius: 10px;
+    margin-top:10px;
+}
+

@@ -1,0 +1,35 @@
+:root{
+    --hamburger-bg:crimson;
+}
+
+.hamburger-container{
+    display: inline-block;
+    position: relative;
+    width:100px;
+    height:100px;
+    background-color: var(--hamburger-bg);
+}
+
+.hamburger, .hamburger::before, .hamburger::after{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: white;
+}
+
+.hamburger::before, .hamburger::after{
+    content:"";
+}
+
+
+.hamburger{
+    top: 50%;
+}
+
+.hamburger::before{
+    top:-30px;
+}
+
+.hamburger::after{
+    top:30px;
+}
