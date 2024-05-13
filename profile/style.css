@@ -1,0 +1,11 @@
+:root{
+    --body-bg: #ff9eaa;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: var(--body-bg);
+}
