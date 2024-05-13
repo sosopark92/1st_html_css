@@ -1,11 +1,16 @@
-:root{
-    --body-bg: #ff9eaa;
-}
-
-html,body{
-    height: 100%;
-}
-
 body{
-    background-color: var(--body-bg);
+    background-color: #ff9eaa;
+}
+
+.profile{
+    width: 8rem; /*1rem=16px*/
+    height: 8rem;
+    background-image: url("dog.jpeg"); /*프로필 이미지 삽입*/
+    background-size: 230px; /*프로필 이미지 크기 조정*/
+    border-radius: 50%; /*도형 원으로 만들기*/
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.banner{
+    background-image: url("space_bg.jpeg");
 }
