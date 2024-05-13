@@ -1,5 +1,24 @@
 :root{
+    --body-bg: crimson;
     --hamburger-bg:crimson;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    background-color: var(--body-bg);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-title{
+    color: white;
+    font-size: 18px;
+    padding-bottom: 10px;
 }
 
 .hamburger-container{
@@ -11,7 +30,7 @@
 }
 
 .hamburger, .hamburger::before, .hamburger::after{
-    position: absolute;
+    position: absolute; /*부모 relative를 기준으로 함*/
     width: 100%;
     height: 10px;
     background-color: white;
@@ -32,4 +51,31 @@
 
 .hamburger::after{
     top:30px;
+}
+
+/*형태 변형*/
+.toggle:checked ~ .hamburger::after{
+    top:0; /*부모인 hamburger를 기준으로 상단에 위치*/
+    transform: rotate(225deg);
+}
+
+.toggle:checked ~ .hamburger::before{
+    top:0;
+    transform: rotate(135deg);
+}
+
+.toggle:checked ~ .hamburger{
+    background-color: var(--hamburger-bg);
+}
+
+.toggle{
+    opacity:0;
+}
+
+.hamburger, .hamburger::before, .hamburger::after{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    transition: 0.5s;
+    background-color: white;
 }
